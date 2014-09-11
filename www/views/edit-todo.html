@@ -1,0 +1,19 @@
+<ion-header-bar class="bar-positive">
+    <div class="buttons">
+        <button class="button" ui-sref="todos">Back</button>
+        <h1 class="title">Edit Todo</h1>
+    </div>
+</ion-header-bar>
+
+<ion-content>
+    <div>
+        <ion-list>
+            <li class="item item-input item-stacked-label">
+                <textarea type="text" name="content" rows="10" ng-model="todo.content" required></textarea>
+            </li>
+            <ion-button class="button button-block button-positive" ng-click="edit()">
+                Update
+            </ion-button>
+        </ion-list>
+    </div>
+</ion-content>
