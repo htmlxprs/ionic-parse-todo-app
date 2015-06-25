@@ -19,6 +19,7 @@ angular.module('todoApp', ['ionic','todoApp.controllers','todoApp.services'])
   });
 }).config(function($stateProvider){
         $stateProvider.state('todos',{
+           cache: false,
            url:'/todos',
            controller:'TodoListController',
            templateUrl:'views/todos.html'
